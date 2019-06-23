@@ -1,0 +1,30 @@
+			cout << d << n << g << m << endl;
+			int x = 0, y = 0, z = 0;
+			for (int h = 0; h < g; h++) {
+				cout << "petla h:  " << endl;
+				for (int k = 0; k < d; k++) {
+					cout << "petla k:  " << endl;
+					x = 0;
+					cout << "x = 0" << endl;
+					for (int i = 0; i < n; i++) {
+						cout << "petla i:  " << endl;
+						cout << "y = 0 " << endl;
+						y = 0;
+						for (int j = 0; j < d; j++) {
+							cout << "petla j:  " << endl;
+							cout << "h << k << i << j   " << h << k << i << j << endl;
+							if ((i != h) && (j != k)) {
+								cout << "h << k << x << y << i << j   " << h << k << x << y << i << j << endl;
+								cout << "tablica2D[i][j]" << tablica2D[i][j] << endl;
+								podmacierz[h][k][x][y] = tablica2D[i][j];
+								cout << "podmacierz[h][k][x][y]" << podmacierz[h][k][x][y] << endl;
+								y++;
+								cout << "y++ " << y << endl;
+							}
+						}
+						z++;
+						cout << "z++ " << z << endl;
+						if (z == d) { x++; cout << "z == d wiec x++; z = 0" << x << endl; z = 0; }
+					}
+				}
+			}
